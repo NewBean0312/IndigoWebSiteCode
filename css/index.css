@@ -46,7 +46,7 @@
 /* 헤더 영역 CSS */
 .header {
   position: relative;
-  padding: 18px 0;
+  padding: 18px 5%;
 }
 
 .header .logo {
@@ -95,6 +95,14 @@
 
 .header .menu-toggle-btn span:nth-child(2) {
   margin: 5px 0;
+}
+
+/* 슬라이더 영역 CSS */
+.slider img {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  height: auto;
 }
 
 /* 태블릿용 CSS */
