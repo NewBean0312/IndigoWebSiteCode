@@ -81,7 +81,7 @@
 
 .header .menu-toggle-btn {
   float: right;
-  width: 20px; 
+  width: 20px;
   margin-top: 4px;
   cursor: pointer;
 }
@@ -116,9 +116,40 @@
 }
 
 .display-section .desc {
-  font-family: 'PT Serif';
+  font-family: "PT Serif";
   color: #616161;
   line-height: 1.9;
+}
+
+/* 프로모션 영역 CSS */
+.promotion-section {
+  margin-top: 68px;
+}
+
+.promotion-section .promo-list li {
+  margin-top: 52px;
+  text-align: center;
+}
+
+.promotion-section .promo-list li:first-child {
+  margin-top: 0;
+}
+
+.promotion-section .promo-list li img {
+  height: 52px;
+}
+
+.promotion-section .promo-list li h3 {
+  margin: 29px 0 20px 0;
+  color: #3f51b5;
+  font-weight: normal;
+}
+
+.promotion-section .promo-list li p {
+  font-size: 14px;
+  font-family: "PT Serif";
+  color: #616161;
+  line-height: 1.5;
 }
 
 /* 태블릿용 CSS */
@@ -158,7 +189,7 @@
     padding: 0;
     font-size: 16px;
   }
-  
+
   .header .menu-toggle-btn {
     display: none !important;
   }
@@ -166,6 +197,22 @@
   /* 디스플레이 영역 CSS */
   .display-section {
     margin-top: 95px;
+  }
+
+  /* 프로모션 영역 CSS */
+  .promotion-section {
+    margin-top: 110px;
+  }
+
+  .promotion-section .promo-list li {
+    float: left;
+    width: 23.046875%; /* 177px ÷ 768px */
+    margin-left: 2.604167%; /* 20px ÷ 768px */
+    margin-top: 0;
+  }
+
+  .promotion-section .promo-list li:first-child {
+    margin-left: 0;
   }
 }
 
@@ -183,9 +230,9 @@
 
   .display-section .desc {
     position: relative;
-    float: left;
+    float: right;
     padding-left: 20px;
-    font-family: 'PT Serif';
+    font-family: "PT Serif";
     color: #616161;
     line-height: 1.9;
   }
@@ -198,6 +245,11 @@
     width: 2px;
     height: 44px;
     background-color: #e0e0e0;
-    content:"";
+    content: "";
+  }
+
+  .promotion-section .promo-list li {
+    width: 23.674912%; /* 268px ÷ 1132px */
+    margin-left: 1.766784%; /* 20px ÷ 1132px */
   }
 }
